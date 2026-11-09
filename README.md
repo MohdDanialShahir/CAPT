@@ -79,7 +79,12 @@ CAPT deploys **high-entropy canary (decoy) files** as digital tripwires across m
 
 ```
 CAPT/
-├── file_entropy_calculator.py   # Entropy analysis utility
+├── file_entropy_calculator.py   # Entropy analysis utility (Task 3)
+├── directory_mapper.py          # Target directory mapper (Task 4)
+├── test_sandbox/                # Auto-created sandbox directories
+│   ├── Desktop/
+│   └── Documents/
+├── .gitignore
 ├── README.md
 └── (modules to be developed per sprint plan)
 
@@ -94,6 +99,7 @@ AA_ransomware/                   # Ransomware simulator (separate repo)
 - [x] Project proposal and literature review
 - [x] Ransomware simulator for testing (`rware_simulator.py`)
 - [x] File entropy calculator utility
+- [x] Task 4: Target deployment directory mapper (`directory_mapper.py`)
 - [ ] Sprint 1: Canary file generation and deployment
 - [ ] Sprint 2: Watchdog monitoring + PID attribution
 - [ ] Sprint 3: Entropy analysis + threat classification
