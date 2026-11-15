@@ -81,9 +81,17 @@ CAPT deploys **high-entropy canary (decoy) files** as digital tripwires across m
 CAPT/
 ├── file_entropy_calculator.py   # Entropy analysis utility (Task 3)
 ├── directory_mapper.py          # Target directory mapper (Task 4)
+├── canary_deployer.py           # Canary file deployer (Task 5)
+├── canary_manifest.json         # Deployment manifest (auto-generated)
 ├── test_sandbox/                # Auto-created sandbox directories
 │   ├── Desktop/
+│   │   ├── ~CAPT_canary.docx
+│   │   ├── ~CAPT_canary.pdf
+│   │   └── ~CAPT_canary.xlsx
 │   └── Documents/
+│       ├── ~CAPT_canary.docx
+│       ├── ~CAPT_canary.pdf
+│       └── ~CAPT_canary.xlsx
 ├── .gitignore
 ├── README.md
 └── (modules to be developed per sprint plan)
@@ -96,15 +104,35 @@ AA_ransomware/                   # Ransomware simulator (separate repo)
 
 ## Current Progress
 
-- [x] Project proposal and literature review
-- [x] Ransomware simulator for testing (`rware_simulator.py`)
-- [x] File entropy calculator utility
-- [x] Task 4: Target deployment directory mapper (`directory_mapper.py`)
-- [ ] Sprint 1: Canary file generation and deployment
-- [ ] Sprint 2: Watchdog monitoring + PID attribution
-- [ ] Sprint 3: Entropy analysis + threat classification
-- [ ] Sprint 4: Automated process termination
-- [ ] Sprint 5: Flask API + Firebase + React dashboard
+### Phase 1 — Foundation & Setup
+- [x] **Task 1:** Python virtual environment setup (`venv`)
+- [x] **Task 2:** Dummy document templates (`.docx`, `.pdf`, `.xlsx`)
+- [x] **Task 3:** High-entropy random string generator (`file_entropy_calculator.py`)
+- [x] **Task 4:** Target deployment directory mapper (`directory_mapper.py`)
+- [x] **Task 5:** Canary (decoy) file generation & deployment (`canary_deployer.py`)
+
+### Phase 2 — Detection Engine
+- [ ] **Task 6:** Watchdog file-system monitoring agent
+- [ ] **Task 7:** PID attribution module (identify offending process)
+- [ ] **Task 8:** Entropy analysis & threat classification engine
+
+### Phase 3 — Response & Termination
+- [ ] **Task 9:** Automated process termination module
+- [ ] **Task 10:** Ransomware simulator for controlled testing (`rware_simulator.py`)
+
+### Phase 4 — Compliance & Logging
+- [ ] **Task 11:** Act 854 compliance logging (6-hour incident report telemetry)
+- [ ] **Task 12:** JSON incident payload generation
+
+### Phase 5 — Backend & Dashboard
+- [ ] **Task 13:** Flask API webhook (receive incident payloads)
+- [ ] **Task 14:** Firebase Realtime Database integration
+- [ ] **Task 15:** React dashboard (Vite + Tailwind CSS) — incident monitoring, logs & analytics
+
+### Phase 6 — Testing & Evaluation
+- [ ] **Task 16:** End-to-end VM integration testing
+- [ ] **Task 17:** Detection accuracy & response time benchmarking
+- [ ] **Task 18:** Final documentation & FYP report
 
 ## Quick Start
 

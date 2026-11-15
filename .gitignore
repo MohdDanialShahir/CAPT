@@ -15,6 +15,9 @@ env/
 # Sandbox test directories (Task 4 — auto-created, local-only)
 test_sandbox/
 
+# Canary deployment manifest (auto-generated, local-only)
+canary_manifest.json
+
 # IDE / Editor
 .vscode/
 .idea/
