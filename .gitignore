@@ -18,6 +18,9 @@ test_sandbox/
 # Canary deployment manifest (auto-generated, local-only)
 canary_manifest.json
 
+# Incident log (auto-generated, local-only)
+incident_log.jsonl
+
 # IDE / Editor
 .vscode/
 .idea/

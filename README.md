@@ -82,7 +82,9 @@ CAPT/
 ├── file_entropy_calculator.py   # Entropy analysis utility (Task 3)
 ├── directory_mapper.py          # Target directory mapper (Task 4)
 ├── canary_deployer.py           # Canary file deployer (Task 5)
+├── watchdog_monitor.py          # Watchdog monitoring agent (Task 6)
 ├── canary_manifest.json         # Deployment manifest (auto-generated)
+├── incident_log.jsonl           # Incident log (auto-generated)
 ├── test_sandbox/                # Auto-created sandbox directories
 │   ├── Desktop/
 │   │   ├── ~CAPT_canary.docx
@@ -112,8 +114,8 @@ AA_ransomware/                   # Ransomware simulator (separate repo)
 - [x] **Task 5:** Canary (decoy) file generation & deployment (`canary_deployer.py`)
 
 ### Phase 2 — Detection Engine
-- [ ] **Task 6:** Watchdog file-system monitoring agent
-- [ ] **Task 7:** PID attribution module (identify offending process)
+- [x] **Task 6:** Watchdog file-system monitoring agent (`watchdog_monitor.py`)
+- [x] **Task 7:** PID attribution module — integrated into `watchdog_monitor.py`
 - [ ] **Task 8:** Entropy analysis & threat classification engine
 
 ### Phase 3 — Response & Termination
