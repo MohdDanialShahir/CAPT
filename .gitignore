@@ -21,6 +21,9 @@ canary_manifest.json
 # Incident log (auto-generated, local-only)
 incident_log.jsonl
 
+# Termination log (auto-generated, local-only)
+termination_log.jsonl
+
 # IDE / Editor
 .vscode/
 .idea/
